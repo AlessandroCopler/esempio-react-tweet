@@ -1,4 +1,5 @@
 import { SearchBar } from "./SearchBar"
+import { TweetList } from "./TweetList"
 import { useState, useEffect } from "react"
 
 
@@ -16,6 +17,7 @@ export const TweetSearchResult = (props) => {
     return(
         <>
             <SearchBar setTweetFilter={setTweetFilter} setCheckLocal={setCheckLocal}></SearchBar>
+            <TweetList tweets={tweets} tweetFilter={tweetFilter} tweetCheckLocal={tweetCheckLocal}></TweetList>
         </>
     )
 }
