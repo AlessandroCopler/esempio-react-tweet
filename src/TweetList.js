@@ -9,11 +9,9 @@ export const TweetList = (props) => {
         console.log(tweets)
     },[tweets])
 
-
-
     return(
         <>
-            <TweetCategory tweets={tweets} />
+            <TweetCategory tweets={tweets} tweetFilter={tweetFilter} tweetCheckLocal={tweetCheckLocal} />
         </>
     )
 }
