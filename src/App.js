@@ -8,7 +8,7 @@ const TWEETS = [
   "text": "Omg. A tweet.",
   "local": false,
   "number": 33,
-  "category": "Tecnology"
+  "category": "Farm"
 },
 {
   "text": "Omg. Another.",
