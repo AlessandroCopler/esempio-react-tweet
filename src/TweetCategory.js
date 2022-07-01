@@ -4,6 +4,7 @@ import { TweetRow } from "./TweetRow"
 export const TweetCategory = (props) => {
 
     const {tweets,tweetFilter,tweetCheckLocal} = props
+    let category = ""
 
     const listOfTweetsFIlteredText = tweets.filter(function (tweet) {
         if(tweetFilter === ""){
@@ -23,12 +24,15 @@ export const TweetCategory = (props) => {
         }
     })
 
-    const listOfTweets = listOfTweetsFIlteredCheck.map((tweet) => 
-        <TweetRow tweet={tweet} />
-    )
+    const listOfTweets = listOfTweetsFIlteredCheck.map((tweet) => {
+        category = tweet.category
+        return <TweetRow tweet={tweet} />
+    })
 
     return(
         <>
+            <br/>
+            <b>{category}</b>
             {listOfTweets}
         </>
     )
