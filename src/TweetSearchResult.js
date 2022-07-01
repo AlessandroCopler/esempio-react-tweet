@@ -7,7 +7,7 @@ export const TweetSearchResult = (props) => {
 
     const {tweets=[]} = props
     const [tweetFilter, setTweetFilter] = useState("")
-    const [tweetCheckLocal, setCheckLocal] = useState(false)
+    const [tweetCheckLocal, setCheckLocal] = useState()
 
     useEffect(() => {
         console.log(tweetFilter)
